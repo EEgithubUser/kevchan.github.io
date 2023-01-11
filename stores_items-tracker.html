@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Backend REST API Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>REST API - Stores and Items Tracker</h2>
+						<iframe width="960" height="540" src="https://www.youtube.com/embed/1mHdacyJi6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<p>"url": "https://rest-apis-flask-python-project-w7md.onrender.com"<br></br>Backend web service created and deployed to allow clients to create stores and items using REST API endpoints. In addition, users can create a secure account encrypted through SHA-256 login methods. JSON Web Tokens (JWTs) are generated upon login and sensitive endpoints will be protected using implementations of JWT requirements. <br></br>Note: Endpoints shown below have been tested using Insomnia REST client.</p>
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create user.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create user.PNG" alt="" /></a>
+								<h3> POST /register </h3>
+								<p> Create a new user with a username and password. The first user created will have a user ID of 1. </p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/authenticate user.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/authenticate user.PNG" alt="" /></a>
+								<h3> POST /login </h3>
+								<p> Login to an existing account by authenticating account credentials. An access token and a refresh token will be generated automatically upon successful login attempt.</p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get user.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get user.PNG" alt="" /></a>
+								<h3> GET /user/id </h3>
+								<p> Retrieve username from inputted account ID. </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create store md.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create store md.PNG" alt="" /></a>
+								<h3> POST /store </h3>
+								<p> Create a new store called McDonald's. The first store created will have the store ID of 1.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item md 1.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item md 1.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Large Fries, the price, 3.49, and the associated store ID, 1. This item will have an item ID of 1.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item md 2.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item md 2.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Big Mac, the price, 5.99, and the associated store ID, 1. This item will have an item ID of 2.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item md 3.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item md 3.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Large Soda, the price, 0.99, and the associated store ID, 1. This item will have an item ID of 3.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create store bk.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create store bk.PNG" alt="" /></a>
+								<h3> POST /store </h3>
+								<p> Create a new store called Burger King. This next store created will have the store ID of 2.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item bk 1.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item bk 1.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Whopper, the price, 5.49, and the associated store ID, 2. This item will have an item ID of 4.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item bk 2.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item bk 2.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Onion Rings, the price, 1.99, and the associated store ID, 2. This item will have an item ID of 5.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item bk 3.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item bk 3.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Large Roast Coffee (Vanilla), the price, 2.99, and the associated store ID, 2. This item will have an item ID of 6.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create store cfa.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create store cfa.PNG" alt="" /></a>
+								<h3> POST /store </h3>
+								<p> Create a new store called Chick-Fil-A. This next store created will have the store ID of 3.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item cfa 1.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item cfa 1.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Spicy Chicken Sandwich, the price, 4.29, and the associated store ID, 3. This item will have an item ID of 7.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item cfa 2.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item cfa 2.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, 12 Pc. Chick-Fil-A Nuggets, the price, 5.70, and the associated store ID, 3. This item will have an item ID of 8.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create item cfa 3.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create item cfa 3.PNG" alt="" /></a>
+								<h3> POST /item </h3>
+								<p> Create a new item by inputting the name, Large Fresh-Squeezed Lemonade, the price, 2.69, and the associated store ID, 3. This item will have an item ID of 9.</p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get all items 1.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get all items 1.PNG" alt="" /></a>
+								<h3> GET /item </h3>
+								<p> Retrieve all item data stored in the database (1) </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get all items 2.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get all items 2.PNG" alt="" /></a>
+								<h3> GET /item </h3>
+								<p> Retrieve all item data stored in the database (2) </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get all items 3.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get all items 3.PNG" alt="" /></a>
+								<h3> GET /item </h3>
+								<p> Retrieve all item data stored in the database (3) </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get all store data 1.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get all store data 1.PNG" alt="" /></a>
+								<h3> GET /store </h3>
+								<p> Retrieve all store data stored in the database (1) </p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get all store data 2.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get all store data 2.PNG" alt="" /></a>
+								<h3> GET /store </h3>
+								<p> Retrieve all store data stored in the database (2) </p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get item.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get item.PNG" alt="" /></a>
+								<h3> GET /item/id </h3>
+								<p> Retrieve specific item data given the item's ID. Given ID 7, this endpoint will return the "Spicy Chicken Sandwich" item data. </p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/delete item.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/delete item.PNG" alt="" /></a>
+								<h3> DEL /item/id </h3>
+								<p> Delete specific item given the item's ID. Given ID 7, this endpoint will delete the "Spicy Chicken Sandwich" item data. </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/delete item check.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/delete item check.PNG" alt="" /></a>
+								<h3> GET /item/id </h3>
+								<p> To check if the item has been deleted successfully, we run the GET item endpoint for item 7. The endpoint returns a 404 Not Found error, thus indicating the item has been deleted from the database. </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/get store.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/get store.PNG" alt="" /></a>
+								<h3> GET /store/id </h3>
+								<p> Retrieve specific store data given the store's ID. Given ID 3, this endpoint will return the "Chick-Fil-A" store data. </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/delete store.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/delete store.PNG" alt="" /></a>
+								<h3> DEL /store/id </h3>
+								<p> Delete specific store given the store's ID. Given ID 3, this endpoint will delete the "Chick-Fil-A" store data. </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/delete store check.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/delete store check.PNG" alt="" /></a>
+								<h3> GET /store/id </h3>
+								<p> To check if the store has been deleted successfully, we run the GET store endpoint for store 3. The endpoint returns a 404 Not Found error, thus indicating the store has been deleted from the database. </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/create user 2.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/create user 2.PNG" alt="" /></a>
+								<h3> POST /register </h3>
+								<p> Create a new user with a username and password. This new user will have a user ID of 2. </p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/authenticate user 2.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/authenticate user 2.PNG" alt="" /></a>
+								<h3> POST /login </h3>
+								<p> Login to an existing account by authenticating account credentials. An access token and a refresh token will be generated automatically upon successful login attempt.</p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/log out.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/log out.PNG" alt="" /></a>
+								<h3> POST /logout </h3>
+								<p> Revoke JWT from the user that has logged out. The JWT will be stored in a blocklist where it will be checked to determine if an endpoint can be accessed or not. </p>
+							</article>
+						</div>
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/delete user.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/delete user.PNG" alt="" /></a>
+								<h3> DEL /user/id </h3>
+								<p> Delete specific user given the user's ID. Given ID 1, this endpoint will delete the "username" user data. </p>
+							</article>
+						</div>	
+						<br></br>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/REST API/delete user check.PNG" class="image featured"><img style='border:2px solid #D3D3D3' src="images/REST API/delete user check.PNG" alt="" /></a>
+								<h3> GET /user/id </h3>
+								<p> To check if the user has been deleted successfully, we run the GET user endpoint for user 1. The endpoint returns a 404 Not Found error, thus indicating the user has been deleted from the database. </p>
+							</article>
+						</div>										
+					</div>
+					<footer>
+						<!-- <p>Thanks for checking out some of my projects!</p> -->
+						<a href="index.html#portfolio" class="button large scrolly">Back to Portfolio</a>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Contact Me!</h2>
+						<p>Feel free to reach out to me via the email listed below</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<section class="alt">
+								<h3>Email</h3>
+								<p>kevchan129@gmail.com</p>
+							</section>																				
+<!-- 							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
+							</form> -->
+						</div>
+						<div class="col-12">
+							<hr />
+							<h3>My Social Media</h3>
+							<ul class="social">
+								<li><a href="https://linkedin.com/in/kevchan129/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/EEgithubUser/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://leetcode.com/KevChan_Leetcode22/" class="icon fa-file-code"><span class="label">LeetCode</span></a></li>
+								<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+								<!-- <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li> -->
+								<!--
+								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+								-->
+							</ul>
+							<hr />
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
